@@ -1,0 +1,326 @@
+.routes-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  min-height: calc(100vh - 60px);
+}
+
+.routes-title {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.routes-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  flex: 1 1 300px;
+  min-width: 200px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #6e8efb;
+  box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+}
+
+.routes-subtitle {
+  color: #333;
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.roads-table,
+.routes-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.roads-table th,
+.roads-table td,
+.routes-table th,
+.routes-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.roads-table th,
+.routes-table th {
+  background: #f1f1f1;
+  color: #333;
+  font-weight: bold;
+}
+
+.roads-table tr:nth-child(even),
+.routes-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.roads-table tr:hover,
+.routes-table tr:hover {
+  background: #f5f5f5;
+}
+
+.select-button {
+  background: #6e8efb;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.select-button:hover {
+  background: #5d7ce0;
+  transform: scale(1.05);
+}
+
+.map-container {
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.results-title {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.results p {
+  color: #555;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.save-button,
+.clear-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.save-button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+}
+
+.save-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5d7ce0, #9166c2);
+}
+
+.clear-button {
+  background: #e74c3c;
+  color: white;
+}
+
+.clear-button:hover {
+  transform: scale(1.05);
+  background: #c0392b;
+}
+
+.no-routes {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .routes-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  .roads-table th,
+  .roads-table td,
+  .routes-table th,
+  .routes-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .select-button,
+  .save-button,
+  .clear-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+.report-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.report-form {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.report-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.report-button:hover {
+  background-color: #45a049;
+}
+
+.contract-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contract-form {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contract-form .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contract-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contract-form .form-input,
+.contract-form .form-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contract-form .form-input:focus,
+.contract-form .form-select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.action-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pay-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+  background-color: #45a049;
+}
+
+.pay-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

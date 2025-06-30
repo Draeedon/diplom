@@ -1,0 +1,90 @@
+.trips-journal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.trips-journal h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.date-filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.date-picker label {
+  font-size: 14px;
+  color: #666;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.trips-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.trips-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}
+
+/* Стили для DatePicker */
+.react-datepicker-wrapper {
+  width: 200px;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.react-datepicker__input-container input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+} 

@@ -1,0 +1,102 @@
+.drivers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.driver-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.drivers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.drivers-table th, .drivers-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.drivers-table th {
+  background-color: #f2f2f2;
+}
+
+.deposit-input {
+  padding: 5px;
+  width: 80px;
+  margin-right: 5px;
+}
+
+.deposit-button, .view-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.deposit-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.deposit-button:hover {
+  background-color: #1e87db;
+}
+
+.view-button {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.view-button:hover {
+  background-color: #ec971f;
+}
